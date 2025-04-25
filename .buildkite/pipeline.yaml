@@ -1,0 +1,5 @@
+steps:
+  - name: "test"
+    commands:
+      - uv sync
+      - uv run main.py
