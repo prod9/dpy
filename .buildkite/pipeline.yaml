@@ -1,5 +1,8 @@
 steps:
   - name: "test"
     commands:
+      - microdnf install -y python
+      - python -m ensurepip --upgrade
+      - python -m pip install uv
       - uv sync
       - uv run main.py
